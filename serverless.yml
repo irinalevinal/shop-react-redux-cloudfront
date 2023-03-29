@@ -1,4 +1,4 @@
-service: shop-react-redux-cloudfront-cloudx-crouse
+service: shop-react-redux-cloudfront-autodeploy-cloudx-crouse
 
 frameworkVersion: "3"
 
@@ -19,7 +19,7 @@ plugins:
 
 custom:
   client:
-    bucketName: shop-react-redux-cloudfront-cloudx-crouse
+    bucketName: shop-react-redux-cloudfront-autodeploy-cloudx-crouse
     distributionFolder: dist
   s3BucketName: ${self:custom.client.bucketName}
   s3Bucket: ${self:custom.client.bucketName}

@@ -22,6 +22,7 @@ custom:
     bucketName: shop-react-redux-cloudfront-cloudx-crouse
     distributionFolder: dist
   s3BucketName: ${self:custom.client.bucketName}
+  s3Bucket: ${self:custom.client.bucketName}
 
   ## Serverless-single-page-app-plugin configuration:
   s3LocalPath: ${self:custom.client.distributionFolder}/

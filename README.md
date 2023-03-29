@@ -71,5 +71,10 @@ Combination of `cloudfront:setup` and `cloudfront:build:deploy` commands with or
 Remove an entire stack configured in `serverless.yml` via CloudFormation.
 
 
+Manual Deploy:
 [CloudFront] - https://d1rm22621zeubt.cloudfront.net/
 [S3] - https://shop-react-redux-cloudfront-cloudx-crouse.s3.eu-central-1.amazonaws.com/
+
+Auto Deploy: 
+[CloudFront] - https://d38x8iakb1madh.cloudfront.net/
+[S3] - https://shop-react-redux-cloudfront-autodeploy-cloudx-crouse.s3.eu-central-1.amazonaws.com/index.html

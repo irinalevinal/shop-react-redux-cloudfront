@@ -1,11 +1,11 @@
-service: my-store-app
+service: shop-react-redux-cloudfront-autodeploy-cloudx-crouse
 
 frameworkVersion: "3"
 
 provider:
   name: aws
   runtime: nodejs14.x
-  region: eu-west-1
+  region: eu-central-1
   # setup profile for AWS CLI.
   # profile: node-aws
 
@@ -19,9 +19,10 @@ plugins:
 
 custom:
   client:
-    bucketName: my-store-app
+    bucketName: shop-react-redux-cloudfront-autodeploy-cloudx-crouse
     distributionFolder: dist
   s3BucketName: ${self:custom.client.bucketName}
+  s3Bucket: ${self:custom.client.bucketName}
 
   ## Serverless-single-page-app-plugin configuration:
   s3LocalPath: ${self:custom.client.distributionFolder}/
